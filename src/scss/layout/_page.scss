@@ -1,0 +1,22 @@
+@use '../core/variables' as vars;
+
+.js__finder__input {
+    display: inline-block;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(64, 96, 199);
+    font-size: 16px;
+}
+
+.js__button {
+    background-color: #3215d9;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    width: 100px;
+    font-size: 16px;
+}
