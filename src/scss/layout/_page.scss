@@ -35,26 +35,27 @@
 
 .products__list {
   background-color: rgb(198, 136, 136);
-  width: 600px;
+  width: 400px;
+  height: 200px;
   display: flex;
   justify-content: center;
 }
 
 .product__card {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #0ddef0;
   border-radius: 12px;
   padding: 15px;
   text-align: center;
   width: 270px;
   margin-bottom: 20px;
+
 }
 
 .product__image {
   width: 150px;
   height: 200px;
   object-fit: contain;
-  /* que es? */
   border-radius: 8px;
   margin-bottom: 10px;
 }
