@@ -1,12 +1,11 @@
-@use '../core/variables' as vars;
 
 .page__footer {
-    background-color: #3215d9;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    padding: 1rem;
-    text-align: center;
-    color: white;
-    font-size: 20px;
+  background-color: #070707;
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-size: 20px;
 }

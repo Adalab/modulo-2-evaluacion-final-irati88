@@ -1,9 +1,15 @@
 .page__header {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 3rem;
+  background-color: #101010;
+  width: 100%;
 }
 
 h1 {
+  margin: 20px;
+  color: #e93b3b;
+  font-family: "Allison", cursive;
+  font-weight: 800;
+  font-style: normal;
   font-size: 50px;
 }
