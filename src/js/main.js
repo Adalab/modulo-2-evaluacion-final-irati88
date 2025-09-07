@@ -46,7 +46,7 @@ const renderProducts = (product) => {
 
   productHtmlCode = `<li class="product__card">
     
-    <img src="${product.image}" class="product__image" alt="${product.title}" width="150" "height="200" />
+    <img src="${product.image}" class="product__image" alt="${product.title}" width="150" height="200" />
 
     <h3 class="product__title">${product.title}</h3>
 
@@ -116,8 +116,11 @@ const showFilteredProducts = (filteredList) => {
   }
 };
 
+if (buttonSearch) {
 buttonSearch.addEventListener("click", handleSearchButton);
+}
 
+// Mostrando el carrito
 const cartList = document.querySelector(".cart__list");
 
 const showCart = () => {
@@ -149,7 +152,7 @@ const showCart = () => {
       `;
     }
 
-    cartHtml = `<button class="empty__cart-btn">Clear Cart</button>"`;
+    cartHtml += `<button class="empty__cart-btn">Clear Cart</button>`;
     
   }
 
@@ -158,11 +161,13 @@ const showCart = () => {
   // Vaciando el carrito
   const emptyCartButton = document.querySelector(".empty__cart-btn");
 
+  if (emptyCartButton) {
   emptyCartButton.addEventListener("click", () => {
     cart = []; // Vacía el carrito
     showCart(); // Actualiza la vista del carrito
     showProducts(products); // Actualiza los botones de los productos
   });
+  }
 
   // Eliminando productos del carrito
   const removeButtons = document.querySelectorAll(".remove__btn");
